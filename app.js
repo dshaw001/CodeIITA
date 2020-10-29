@@ -48,6 +48,10 @@ app.get("/signin",function(req,res){
     res.render("signin",{user:useris});
 })
 
+// =============================
+// =============================
+// =============================
+
 app.post("/signin",function(req,res){
     let sql="SELECT * FROM users WHERE username = \""+req.body.username+"\" and password = \""+req.body.password+"\"";
     console.log(sql);
